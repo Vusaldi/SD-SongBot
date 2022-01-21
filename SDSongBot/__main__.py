@@ -8,11 +8,15 @@ from SDSongBot import SDbot as app
 from SDSongBot import LOGGER
 
 pm_start_text = """
-Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
-😉 Just send me the song name you want to download.😋
-      eg:```/song Faded```
+Salam [{}](tg://user?id={}), Mən Mahnı Yükləmə Botuyam
+
+ 🎵
+😉 Sadəcə yükləmək istədiyiniz mahnının adını mənə göndərin
+
+.😋
+      eg:```/song Taladro Kendine İyi Bak```
       
-A bot by @SDBotsz 🇱🇰
+Botlarım @BTTBotlarim 🇦🇿
 """
 
 @app.on_message(filters.command("start"))
@@ -25,10 +29,10 @@ async def start(client, message):
             [
                 [
                      InlineKeyboardButton(
-                        text="Channel 🔊", url="https://t.me/SDbotsz"
+                        text="💬 Sohbet Qrupumuz", url="https://t.me/lyuksmekan"
                     ),
                     InlineKeyboardButton(
-                        text="Dev 🔥", url="https://t.me/Darkridersslk"
+                        text="👨🏻‍💻 Sahibim", url="https://t.me/Vusaldeveloper"
                     )
                 ]
             ]
@@ -39,5 +43,5 @@ async def start(client, message):
 
 
 app.start()
-LOGGER.info("✅ SDSongBot is online.")
+LOGGER.info("✅ Song Aze  is online.")
 idle()
